@@ -1,6 +1,6 @@
 import {Customer} from './Customer';
 import {Iterator} from './Iterator';
-import {IteratorCustomer} from './IteratorCustomer';
+import {CustomerIterator} from './CustomerIterator';
 
 class Main {
     public execute = (): void => {
@@ -10,7 +10,7 @@ class Main {
         customers.push(new Customer(1, "Ronaldo", "ron@email.com"));
         customers.push(new Customer(2, "Neymar", "ney@email.com"));
 
-        let iterator: Iterator  = new IteratorCustomer(customers);
+        let iterator: Iterator  = new CustomerIterator(customers);
 
         while (iterator.hasNext()){
             let customer : Customer = iterator.next();
@@ -21,3 +21,4 @@ class Main {
 
 let main: Main = new Main();
 main.execute();
+

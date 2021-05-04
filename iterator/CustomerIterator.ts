@@ -1,7 +1,7 @@
 import {Iterator} from './Iterator'; //interface
 import {Customer} from './Customer'; //class
 
-export class IteratorCustomer implements Iterator {
+export class CustomerIterator implements Iterator {
     
     private customers: Array<Customer>;
     private i: number = 0;
@@ -23,5 +23,7 @@ export class IteratorCustomer implements Iterator {
     }
 
 }
+
+
 
 
